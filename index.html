@@ -4,9 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>记录美好生活</title>
-    <link rel="stylesheet" href="./styles.css">
-    <link rel="manifest" href="./manifest.json">
-    <meta name="theme-color" content="#ffffff">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="manifest" href="manifest.json">
+    <meta name="theme-color" content="#4CAF50">
 </head>
 <body>
     <header>
@@ -21,6 +21,7 @@
                 <input type="file" id="post-image" accept="image/*">
                 <button type="submit">发布</button>
             </form>
+            <button id="clear-storage">清理所有记录</button>
         </section>
 
         <section class="posts">
@@ -35,6 +36,13 @@
         <p>© 2024 记录美好生活</p>
     </footer>
 
-    <script src="./app.js"></script>
+    <!-- 图片模态框 -->
+    <div id="image-modal" class="modal">
+        <span class="close">&times;</span>
+        <img class="modal-content" id="modal-image">
+        <div id="caption"></div>
+    </div>
+
+    <script src="app.js"></script>
 </body>
 </html>
