@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>记录美好生活</title>
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="manifest" href="./manifest.json">
+    <meta name="theme-color" content="#ffffff">
+</head>
+<body>
+    <header>
+        <h1>记录美好生活</h1>
+    </header>
+
+    <main>
+        <section class="new-post">
+            <h2>创建新记录</h2>
+            <form id="post-form">
+                <textarea id="post-text" placeholder="分享你的美好时刻..." required></textarea>
+                <input type="file" id="post-image" accept="image/*">
+                <button type="submit">发布</button>
+            </form>
+        </section>
+
+        <section class="posts">
+            <h2>记录列表</h2>
+            <div id="posts-container">
+                <!-- 动态生成记录 -->
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2024 记录美好生活</p>
+    </footer>
+
+    <script src="./app.js"></script>
+</body>
+</html>
